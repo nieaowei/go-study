@@ -28,6 +28,5 @@ func main() {
 		}
 	}()
 	time.Sleep(3 * time.Second)
-	1203
 	fmt.Println(a)
 }
