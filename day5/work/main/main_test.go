@@ -128,3 +128,9 @@ func TestSortFast(t *testing.T) {
 		fmt.Println(tt.args.array)
 	}
 }
+
+func BenchmarkSortFast(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		SortFast([]int{7, 4, 1, 2, 3, 5, 10, 9})
+	}
+}
